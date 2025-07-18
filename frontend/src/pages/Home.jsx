@@ -1,8 +1,7 @@
 import { useState } from "react";
 import MovieCard from "../components/MovieCard"
+import { searchMovies, getPopularMovie } from "../services/Api";
 import "../css/Home.css"
-
-
 
 function Home() {
 
@@ -18,7 +17,6 @@ function Home() {
 
     const handleSearch = (e) => {
         e.preventDefault()
-
     }
 
     return (
@@ -31,10 +29,10 @@ function Home() {
 
             <div className="movies-grid" >
                 {movies.map(
-                    (movie) => 
-                        (
-                            <MovieCard movie={movie} key={movie.id} />
-                        )
+                    (movie) =>
+                    (
+                        <MovieCard movie={movie} key={movie.id} />
+                    )
                 )}
             </div>
         </div>
