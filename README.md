@@ -1,4 +1,4 @@
-#  Movie Discovery Platform
+#  Movie Explorer
 
 A **React + Vite** powered web app to browse popular movies and search for films using the **TMDB API**.
 
